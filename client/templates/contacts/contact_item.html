@@ -1,0 +1,19 @@
+<template name="contactItem">
+	{{#if ownContact}}
+		<div class="contact">
+			<div class="contact-content">
+				<table>
+					<tr>
+						<td rowspan="4" style="padding-right:20px"><img src="{{image}}" style="width: 200px;margin-left: 20px;"></td>
+						<td><h3>Name: <span>{{name}}</span></h3></td>
+					</tr>
+					<tr><td><h3>Email: <span>{{email}}</span></h3></td></tr>
+					<tr><td><h3>Phone No: <span>{{phone}}</span></h3></td></tr>
+					<tr><td><h3>Address: <span>{{address}}</span></h3></td></tr>
+				</table>
+			</div>
+			
+			<a href="/edit/{{_id}}" class="edit btn btn-default">Edit Contact</a>
+		</div>
+	{{/if}}
+</template>

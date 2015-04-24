@@ -1,0 +1,11 @@
+<template name="homePage">
+	<div class="container">
+    <div class="intro-text">
+      <div class="intro-lead-in">Welcome!</div>
+      <div class="intro-heading">It's Nice To Meet You</div>
+      {{#if currentUser}}
+      <a href="/contact" class="btn btn-xl">SHOW ALL CONTACTS</a>
+      {{/if}}
+    </div>
+  </div>
+</template>

@@ -1,0 +1,273 @@
+.grid-block, .main, .contact{
+  background: #293e6a; /*contact background color*/
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); 
+}
+
+body {
+  background: #3b5998; /*full background color dda185*/
+  color: #eddab6; /*contact text color eddab6*/
+}
+
+.control-label{
+  padding-top: 10px;
+}
+
+.navbar {
+  margin-bottom: 10px;
+  background-color: #161161; /*background color of header and footer*/
+  border-color: #161161; /*border color of header and footer*/
+}
+
+.navbar .navbar-inner {
+  -webkit-border-radius: 0px 0px 3px 3px;
+  -moz-border-radius: 0px 0px 3px 3px;
+  -ms-border-radius: 0px 0px 3px 3px;
+  -o-border-radius: 0px 0px 3px 3px;
+  border-radius: 0px 0px 3px 3px;
+}
+
+.contact {
+/* For modern browsers */
+/* For IE 6/7 (trigger hasLayout) */
+  *zoom: 1;
+  position: relative;
+  opacity: 1; 
+}
+
+.contact:before, .contact:after {
+  content: "";
+  display: table; 
+}
+
+.contact:after {
+  clear: both; 
+}
+
+.contact.invisible {
+  opacity: 0; 
+}
+
+.contact.instant {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none; 
+}
+
+.contact.animate{
+  -webkit-transition: all 300ms 0ms;
+  -webkit-transition-delay: ease-in;
+  -moz-transition: all 300ms 0ms ease-in;
+  -o-transition: all 300ms 0ms ease-in;
+  transition: all 300ms 0ms ease-in;
+}
+
+.contact .upvote {
+  display: block;
+  margin: 7px 12px 0 0;
+  float: left; 
+}
+
+.contact .contact-content {
+  float: left; 
+}
+
+.contact .contact-content h3 {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 18px; 
+  color: #fcdf15; /*color of tags before contact details*/
+  font-weight: bold;
+}
+
+.contact .contact-content h3 a {
+  display: inline-block;
+  margin-right: 5px; 
+}
+
+.contact .contact-content h3 span {
+  font-size: 17px;
+  display: inline-block;
+  font-weight: normal;
+  color: #3ec303; /*text color of actual contact details*/
+}
+
+.contact .contact-content p {
+  margin: 0; 
+}
+
+.fileDrop{
+  max-width: 100%;
+}
+
+.contact .edit {
+  display: block;
+  float: right;
+  margin-top: 7px;
+  background-color: #639bf1; /*edit contact button background*/
+  font-size: 18px;
+  color: #293e6a; /*edit contact button text color*/
+  font-weight: bold;
+  border-color: #639bf1;
+}
+
+.form-control{
+  background-color: #fff; /*background color of input area*/
+  color: #000; /*text color of input area*/
+}
+
+.contacts .spinner-container{
+  position: relative;
+  height: 100px;
+}
+
+.jumbotron{
+  text-align: center;
+  background-color: #293e6a;
+}
+.jumbotron h2{
+  font-size: 60px;
+  font-weight: 100;
+}
+
+.footer {
+  color: #fff; /*text color in footer*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin-top: 14px;
+}
+
+.pull-left {
+  margin-left: 15px;
+}
+
+.alert {
+    animation: fadeOut 2700ms ease-in 0s 1 forwards;
+    -webkit-animation: fadeOut 2700ms ease-in 0s 1 forwards;
+    -moz-animation: fadeOut 2700ms ease-in 0s 1 forwards;
+    width: 250px;
+    float: right;
+    clear: both;
+    margin-bottom: 5px;
+    pointer-events: auto;
+  }
+
+  @-webkit-keyframes fadeOut {
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+  }
+
+  @keyframes fadeOut {
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+  }
+
+.intro-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+}
+.intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+@media(min-width:768px) {
+  .intro-text {
+        padding-top: 9%;
+        padding-bottom: 13%;
+    }
+
+  .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+    }
+
+  .intro-text .intro-heading {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+    }
+}
+
+.btn-xl {
+    padding: 20px 40px;
+    border-color: #fed136;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: #f6bf01;
+    color: #fff;
+    background-color: #fec503;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.btn-xl .badge {
+    color: #fed136;
+    background-color: #fff;
+}
